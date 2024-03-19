@@ -1,0 +1,27 @@
+<%- include("partials/header") %>
+    <div class="table-container">
+        <h2 class="todo-title">Update To-Do</h2>
+
+        <div>
+            <a class="btn" href="/">Back</a>
+    
+            <form action="/update-todo/<%= todo._id %>" method="post">
+                <div class="update-todo">
+                    <div class="form-group">
+                        <label for="title" class="text-light">Title</label><br />
+                        <input type="text" name="title" value="<%= todo.title %>">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="desc" class="text-light">Description</label><br/>
+                        <input type="text" name="desc" value="<%= todo.desc %>">
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn">Save</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+<%- include("partials/footer") %>

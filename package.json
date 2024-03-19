@@ -1,0 +1,24 @@
+{
+  "name": "to_do_app",
+  "version": "1.0.0",
+  "description": "Simple To-do App",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "todo",
+    "crud"
+  ],
+  "author": "Zoe Oladokun",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.3",
+    "moment": "^2.30.1",
+    "mongoose": "^8.2.1",
+    "nodemon": "^3.1.0"
+  }
+}
